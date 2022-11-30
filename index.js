@@ -1,12 +1,23 @@
 const express = require('express');
 
+// importing dotenv
+const dotenv = require('dotenv');
+
+// Database connection
+const DbConnection = require('./databaseConnection');
 
 // importing routes
 const usersRouter = require("./routes/users");  //we have written only users instead of users.js 
 const booksRouter = require("./routes/books");  //as js is default so we don't need to mention
 
+dotenv.config();                                    // running dotenv
+
+
 // initialization of app or server , by referencing app we can perform operations
 const app = express();
+
+DbConnection();
+
 
 const PORT = 8081;
 
