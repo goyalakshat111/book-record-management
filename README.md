@@ -17,7 +17,7 @@ PUT: Update a user by id✅
 DELETE: Delete a user by id (check if he/she still has an issued book)(is there any fine to be paid)✅
 
 ## /users/subscription-details/{id}
-GET: Get user subscription details
+GET: Get user subscription details✅
 
 1. Date of subscription
 2. Valid till
@@ -25,11 +25,11 @@ GET: Get user subscription details
 
 ## /books
 GET: Get all books✅
-POST: Add a new book
+POST: Create or Add a new book✅
 
 ## /books/{id}
 GET: Get a book by id✅
-PUT: Update a book by id
+PUT: Update a book by id✅
 
 ## /books/issued/by-user
 GET: Get all issued books✅
@@ -43,10 +43,12 @@ Basic(3months)
 Standard(6months)
 Premium(12months)
 
+NOTE : Dates will be in format mm/dd/yyyy
+
 If the subscription date is 01/12/22
 and Subscription type is Standard
 and the valid till date will be 01/05/23
 
-If he has an issued book and the issued book is to be returned till 01/12/23 and he misses it then gets a fine of  Rs. 100
+If he has an issued book and the issued book is to be returned till 12/01/23 and he misses it then gets a fine of  Rs. 100
 
-If he has an issued book and the issued book is to be returned till 01/12/23 and he misses date of return and his subscription also expires then impose a fine of Rs.200
+If he has an issued book and the issued book is to be returned till 12/01/23 and he misses date of return and his subscription also expires then impose a fine of Rs.200
