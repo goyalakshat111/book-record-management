@@ -152,17 +152,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
-/**
- * Route: /books/fine/:id
- * Method: GET
- * Description: Get fine on book by id
- * Access: Public
- * Parameters: id
- * Data : author, name, genre, publisher, price etc.
- */
-router.get("/fine/:id", (req, res) => {
 
-})
 
 
 
